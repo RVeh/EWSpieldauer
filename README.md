@@ -22,7 +22,7 @@ Visualisierungen, CSV-Exporte und Bewertungen (Sieg, Niederlage, Unentschieden) 
 - 📌 [`01_Einspieler_Einzelwert.ipynb`](01_Einspieler_Einzelwert.ipynb)  
   Berechne $E(V)$ für eine konkrete Chipverteilung
 
-- 📌 [`01_Einspieler_Alle_Verteilungen.ipynb`](01_Einspieler_AlleVerteilungen.ipynb)  
+- 📌 [`01_Einspieler_Alle_Verteilungen.ipynb`](01_Einspieler_Alle_Verteilungen.ipynb)  
   Berechne alle $E(V)$ für $\sum v_j = n$ – sortiert, grafisch, als CSV
 
 ---
