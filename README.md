@@ -15,6 +15,12 @@ Dieses Projekt untersucht die erwartete Spieldauer in einem Würfelspiel mit Chi
 
 [![Binder](https://mybinder.org/badge_logo.svg)](https://mybinder.org/v2/gh/RVeh/EX_Setzstrategien/main?filepath=2025-05-09-EX.ipynb)
 
+## 🧪 Hinweise zur Nutzung
+
+- Notebooks lassen sich direkt in Jupyter oder auf Binder öffnen.
+- Bei Binder oder JupyterLab bitte in der Menüzeile **"Run All Cells"** auswählen, um alle Ausgaben zu erzeugen.
+- Das Projekt verwendet die Python-Standardbibliothek und `matplotlib` für Visualisierungen.
+
 
 ## 🧮 Voraussetzungen
 
