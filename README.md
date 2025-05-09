@@ -13,7 +13,7 @@ Dieses Projekt untersucht die erwartete Spieldauer in einem Würfelspiel mit Chi
 
 ## 🚀 Direkt im Browser starten (mit Binder)
 
-[![Binder](https://mybinder.org/badge_logo.svg)](https://mybinder.org/v2/gh/USERNAME/REPO/main?filepath=2025-05-09-EX.ipynb)
+[![Binder](https://mybinder.org/badge_logo.svg)](https://mybinder.org/v2/gh/RVeh/EX_Setzstrategien/main?filepath=2025-05-09-EX.ipynb)
 
 
 ## 🧮 Voraussetzungen
