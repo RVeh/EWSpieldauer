@@ -1,4 +1,4 @@
-# 🎲 Erwartungswerte bei Chipspielen – interaktiv analysieren
+# 🎲 Erwartungswerte bei Setzstrategien – interaktive Analyse mit Python
 
 Dieses Projekt untersucht ein Wahrscheinlichkeits-Spiel mit Chips auf m Feldern.  
 Ziel ist es, die **erwartete Anzahl an Würfen** bis zur vollständigen Abräumung zu berechnen – entweder allein oder im Duell mit einer anderen Strategie.
@@ -12,7 +12,6 @@ Visualisierungen, CSV-Exporte und Bewertungen (Sieg, Niederlage, Unentschieden) 
 
 [![Binder](https://mybinder.org/badge_logo.svg)](https://mybinder.org/v2/gh/RVeh/EX_Setzstrategien/main?filepath=00_Start.ipynb)
 
-
 ---
 
 ## 📚 Inhalte
@@ -22,7 +21,7 @@ Visualisierungen, CSV-Exporte und Bewertungen (Sieg, Niederlage, Unentschieden) 
 - 📌 [`01_Einspieler_Einzelwert.ipynb`](01_Einspieler_Einzelwert.ipynb)  
   Berechne $E(V)$ für eine konkrete Chipverteilung
 
-- 📌 [`01_Einspieler_Alle_Verteilungen.ipynb`](01_Einspieler_Alle_Verteilungen.ipynb)  
+- 📌 [`01_Einspieler_AlleVerteilungen.ipynb`](01_Einspieler_AlleVerteilungen.ipynb)  
   Berechne alle $E(V)$ für $\sum v_j = n$ – sortiert, grafisch, als CSV
 
 ---
@@ -42,20 +41,9 @@ Visualisierungen, CSV-Exporte und Bewertungen (Sieg, Niederlage, Unentschieden) 
 Nur `pandas` und `matplotlib` werden benötigt.  
 Diese werden automatisch von Binder installiert.
 
-
-
-# 🎲 Erwartungswerte bei Chipspielen – interaktiv mit Python
-
-Dieses Projekt untersucht die erwartete Spieldauer in einem Würfelspiel mit Chips, das rekursiv modelliert wird. Ziel ist es, mit Wahrscheinlichkeiten und Spielstrategien die Anzahl benötigter Würfe bis zur Beendigung des Spiels zu berechnen.
-
-## 📚 Inhalte
-
-- Rekursive Berechnung von $E(V)$ (Einzelspieler)
-- Rekursive Berechnung der Erwartungswerte sämtlicher Verteilungen
-- Berechnung von $E(V, W)$ (Zwei Spieler mit Strategien)
-- Berechnung von $E(V, W)$, $V$ vorgegeben, gegen alle anderen Verteilungen W (Zwei Spieler mit Strategien)
-- Grafische Ausgaben 
-- CSV-Export
+```txt
+matplotlib
+pandas
 
 
 ## 🧪 Hinweise zur Nutzung
@@ -71,12 +59,6 @@ Dieses Projekt untersucht die erwartete Spieldauer in einem Würfelspiel mit Chi
 - matplotlib
 - pandas
 
-## 🔍 Beispielhafte Inhalte
-
-- Strategien vergleichen
-- Verteilungen analysieren
-- Visualisierung und CSV-Export
-- Formeln und Spielbezug dokumentiert im Markdown
 
 ## ✍️ Mitwirkende
 
