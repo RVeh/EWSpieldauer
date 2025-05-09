@@ -7,6 +7,7 @@ Dieses Projekt untersucht die erwartete Spieldauer in einem Würfelspiel mit Chi
 - Rekursive Berechnung von $E(V)$ (Einzelspieler)
 - Rekursive Berechnung der Erwartungswerte sämtlicher Verteilungen
 - Berechnung von $E(V, W)$ (Zwei Spieler mit Strategien)
+- Berechnung von $E(V, W)$, $V$ vorgegeben, gegen alle anderen Verteilungen W (Zwei Spieler mit Strategien)
 - Grafische Ausgaben 
 - CSV-Export
 
