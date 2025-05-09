@@ -5,16 +5,15 @@ Dieses Projekt untersucht die erwartete Spieldauer in einem Würfelspiel mit Chi
 ## 📚 Inhalte
 
 - Rekursive Berechnung von $E(V)$ (Einzelspieler)
+- Rekursive Berechnung der Erwartungswerte sämtlicher Verteilungen
 - Berechnung von $E(V, W)$ (Zwei Spieler mit Strategien)
-- Grafische Ausgaben (2D, 3D, Graustufen)
-- CSV-Export und Bewertung (Sieg, Unentschieden, Niederlage)
+- Grafische Ausgaben 
+- CSV-Export
 
 ## 🚀 Direkt im Browser starten (mit Binder)
 
-[![Binder](https://mybinder.org/badge_logo.svg)](https://mybinder.org/v2/gh/USERNAME/REPO/main?filepath=DATEINAME.ipynb)
+[![Binder](https://mybinder.org/badge_logo.svg)](https://mybinder.org/v2/gh/USERNAME/REPO/main?filepath=2025-05-09-EX.ipynb)
 
-> Ersetze `USERNAME/REPO` durch deinen GitHub-Namen und Reponamen,  
-> und `DATEINAME.ipynb` durch dein zentrales Notebook.
 
 ## 🧮 Voraussetzungen
 
@@ -31,7 +30,7 @@ Dieses Projekt untersucht die erwartete Spieldauer in einem Würfelspiel mit Chi
 
 ## ✍️ Mitwirkende
 
-- [Dein Name oder Institution]
+- [Reimund Vehling]
 - Mit KI-Unterstützung von ChatGPT
 
 ---
