@@ -12,7 +12,6 @@ Visualisierungen, CSV-Exporte und Bewertungen (Sieg, Niederlage, Unentschieden) 
 
 [![Binder](https://mybinder.org/badge_logo.svg)](https://mybinder.org/v2/gh/RVeh/EX_Setzstrategien/main?filepath=00_Start.ipynb)
 
-> Ersetze `DEINNAME/DEINREPO` ggf. mit deinem GitHub-Namen und Reponamen.
 
 ---
 
