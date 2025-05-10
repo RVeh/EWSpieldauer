@@ -14,9 +14,9 @@ Alle Berechnungen erfolgen in Python – exakt mit Bruchrechnung (Fraction).
 | Notebook | Inhalt |
 |----------|--------|
 | `00_Start.ipynb` | Übersicht und Einstiegspunkt |
-| `01_Einspieler_EX.ipynb` | Erwartungswert $E(V)$ für eine Strategie |
-| `01_Einspieler_Alle_Verteilungen.ipynb` | Alle Strategien $V$ mit Chipsumme $n$ |
-| `01_Einspieler_3D.ipynb` | 3D-Darstellung für $m = 3$ |
+| `01_EinSpieler_EX.ipynb` | Erwartungswert $E(V)$ für eine Strategie |
+| `01_EinSpieler_Alle_Verteilungen.ipynb` | Alle Strategien $V$ mit Chipsumme $n$ |
+| `01_EinSpieler_3D.ipynb` | 3D-Darstellung für $m = 3$ |
 | `02_ZweiSpieler_EX_mit_E_V_und_W.ipynb` | Vergleich: $E(V)$, $E(W)$, $E(V, W)$ |
 | `02_Zweispieler_V_gegen_alle.ipynb` | Feste Strategie $V$ gegen alle möglichen $W$ |
 
