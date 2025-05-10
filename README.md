@@ -1,52 +1,38 @@
-# 🎲 Erwartungswerte bei Setzstrategien – interaktive Analyse mit Python
+# 🧠 Chip-Abräumspiele - Erwartungswerte der Spieldauer
 
-Dieses Projekt untersucht ein Wahrscheinlichkeits-Spiel mit Chips auf m Feldern.  
-Ziel ist es, die **erwartete Anzahl an Würfen** bis zur vollständigen Abräumung zu berechnen – entweder allein oder im Duell mit einer anderen Strategie.
+Ein interaktives Projekt zur Analyse von Chip-Verteilstrategien mit exakten Erwartungswerten.  
+Alle Berechnungen erfolgen in Python – exakt mit Bruchrechnung (Fraction).
 
-Die zugrunde liegenden Modelle werden **rekursiv berechnet** und exakt mit Brüchen dargestellt.  
-Visualisierungen, CSV-Exporte und Bewertungen (Sieg, Niederlage, Unentschieden) runden die Analyse ab.
+## 🚀 Direkt starten mit Binder
 
----
-
-## 🚀 Starte direkt im Browser mit Binder
-
-[![Binder](https://mybinder.org/badge_logo.svg)](https://mybinder.org/v2/gh/RVeh/EX_Setzstrategien/main?filepath=00_Start.ipynb)
+[![Binder](https://mybinder.org/badge_logo.svg)](https://mybinder.org/v2/gh/RVeh/EX_Setzstrategien/HEAD)
 
 ---
 
-## 📚 Inhalte
+## 📂 Struktur der Notebooks
 
-### 🔹 1. Einzelspieler
-
-- 📌 [`01_Einspieler_Einzelwert.ipynb`](01_Einspieler_Einzelwert.ipynb)  
-  Berechne $E(V)$ für eine konkrete Chipverteilung
-
-- 📌 [`01_Einspieler_Alle_Verteilungen.ipynb`](01_Einspieler_Alle_Verteilungen.ipynb)  
-  Berechne alle $E(V)$ für $\sum v_j = n$ – sortiert, grafisch, als CSV
-
----
-
-### 🔹 2. Zwei Spieler
-
-- 📌 [`02_Zweispieler_EVW_Einzel.ipynb`](02_Zweispieler_EVW_Einzel.ipynb)  
-  Berechne $E(V, W)$ für zwei konkrete Strategien
-
-- 📌 [`02_Zweispieler_V_gegen_alle.ipynb`](02_Zweispieler_V_gegen_alle.ipynb)  
-  Fixe Strategie $V$ gegen alle möglichen Gegnerstrategien $W$ – mit Bewertung
+| Notebook | Inhalt |
+|----------|--------|
+| `00_Start.ipynb` | Übersicht und Einstiegspunkt |
+| `01_Einspieler_EX.ipynb` | Erwartungswert $E(V)$ für eine Strategie |
+| `01_Einspieler_Alle_Verteilungen.ipynb` | Alle Strategien $V$ mit Chipsumme $n$ |
+| `01_Einspieler_3D.ipynb` | 3D-Darstellung für $m = 3$ |
+| `02_ZweiSpieler_EX_mit_E_V_und_W.ipynb` | Vergleich: $E(V)$, $E(W)$, $E(V, W)$ |
+| `02_Zweispieler_V_gegen_alle.ipynb` | Feste Strategie $V$ gegen alle möglichen $W$ |
 
 ---
 
-## 🛠 Voraussetzungen
+## 📦 Weitere Hinweise
 
-Nur `pandas` und `matplotlib` werden benötigt.  
-Diese werden automatisch von Binder installiert.
+Alle zentralen Funktionen befinden sich in:
 
-```txt
-matplotlib
-pandas
+```python
+chipspiel_utils.py
 
+```
+---
 
-## 🧪 Hinweise zur Nutzung
+Hinweise zur Nutzung
 
 - Notebooks lassen sich direkt in Jupyter oder auf Binder öffnen.
 - Bei Binder oder JupyterLab bitte in der Menüzeile **"Run All Cells"** auswählen, um alle Ausgaben zu erzeugen.
@@ -64,7 +50,3 @@ pandas
 
 - [Reimund Vehling]
 - Mit KI-Unterstützung von ChatGPT
-
----
-
-**Lernen, Spielen und Forschen – alles in einem interaktiven Notebook.**
