@@ -21,6 +21,9 @@ Alle Berechnungen erfolgen in Python – exakt mit Bruchrechnung (Fraction).
 | `02_Zweispieler_V_gegen_alle.ipynb` | Feste Strategie $V$ gegen alle möglichen $W$ |
 
 ---
+📌 Direkt starten im Notebook:  
+👉 [00_Start.ipynb](00_Start.ipynb)
+
 
 ## 📦 Weitere Hinweise
 
