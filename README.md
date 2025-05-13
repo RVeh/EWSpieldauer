@@ -39,6 +39,9 @@ Hinweise zur Nutzung
 - Das Projekt verwendet die Python-Standardbibliothek und `matplotlib` für Visualisierungen.
 - Bei Nutzung von JupytherLab muss sich die Datei *chipspiel.py* im gleichen Verzeichnis wie das benutzte Nootbook befinden.
 
+---
+## 📦 Beispielrechnungen
+In der Datei *Berechnungen.pdf* sind zwei Beispielberechungen dargestellt.
 
 ## 🧮 Voraussetzungen
 
