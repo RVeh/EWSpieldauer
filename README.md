@@ -3,7 +3,7 @@
 Ein interaktives Projekt zur Analyse von Chip-Verteilstrategien mit exakten Erwartungswerten.  
 Alle Berechnungen erfolgen in Python – exakt mit Bruchrechnung (Fraction).
 
-## 🚀 Direkt starten mit Binder
+## 🚀 Direkt starten mit Binder - kann einige Zeit dauern
 
 [![Binder](https://mybinder.org/badge_logo.svg)](https://mybinder.org/v2/gh/RVeh/EX_Setzstrategien/HEAD)
 
