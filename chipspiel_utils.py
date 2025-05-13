@@ -11,7 +11,7 @@ import matplotlib.ticker as ticker
 # 1. Erwartungswert Einzelspieler
 # -------------------------------
 @lru_cache(maxsize=None)
-def expected_one(V, p):
+def E_one(V, p):
     if all(v == 0 for v in V):
         return Fraction(0)
     total, s = Fraction(0), Fraction(0)
@@ -19,7 +19,7 @@ def expected_one(V, p):
         if vj > 0:
             Vj = list(V)
             Vj[j] -= 1
-            total += p[j] * expected_one(tuple(Vj), p)
+            total += p[j] * E_one(tuple(Vj), p)
             s += p[j]
     return (1 + total) / s
 
@@ -27,18 +27,19 @@ def expected_one(V, p):
 # 2. Erwartungswert Zweispieler
 # -------------------------------
 @lru_cache(maxsize=None)
-def expected_two(V, W, p):
+def E_two(V, W, p):
+    m = len(p)
     if V == W or all(v == 0 for v in V) or all(w == 0 for w in W):
         return Fraction(0)
     total, s = Fraction(0), Fraction(0)
-    for j in range(len(p)):
+    for j in range(m):
         if V[j] > 0 or W[j] > 0:
-            new_V = list(V)
-            new_W = list(W)
-            if V[j] > 0: new_V[j] -= 1
-            if W[j] > 0: new_W[j] -= 1
-            total += p[j] * expected_two(tuple(new_V), tuple(new_W), p)
+            Vj, Wj = list(V), list(W)
+            if V[j] > 0: Vj[j] -= 1
+            if W[j] > 0: Wj[j] -= 1
+            total += p[j] * E_two(tuple(Vj), tuple(Wj), p)
             s += p[j]
+    
     return (1 + total) / s
 
 # -------------------------------
@@ -50,7 +51,7 @@ def alle_verteilungen(m, n):
 # -------------------------------
 # 4. Erwartungswerte für alle V
 # -------------------------------
-def alle_EVs(p, m, n, ev_func=expected_one):
+def alle_EVs(p, m, n, ev_func=E_one):
     verteilungen = alle_verteilungen(m, n)
     return sorted([(v, ev_func(tuple(v), tuple(p))) for v in verteilungen], key=lambda x: x[1])
 
@@ -69,20 +70,34 @@ def speichere_csv(werte, dateiname):
 # 6. Plot erstellen (2D)
 # -------------------------------
 
-def plot_EVs(werte, titel="E(V)", pdf_name="plot.pdf", tick_abstand=1000, zeige_plot=True):
+# Plot-Funktion mit xlabel und ylabel
+def plot_EVs(
+    werte,
+    titel="E(V)",
+    xlabel="Verteilungen",
+    ylabel="E(V)",
+    tick_abstand=5,
+    zeige_plot=True,
+    pdf_name="plot.pdf"
+     ):
+    
+    import matplotlib.pyplot as plt
+    import matplotlib.ticker as ticker
+
     x_vals = list(range(len(werte)))
     evs = [float(ev) for _, ev in werte]
     labels = [str(v) for v, _ in werte]
-    fig, ax = plt.subplots(figsize=(6, 3))
-    ax.plot(x_vals, evs, color="black", marker=".", markersize=3, linewidth=1)
-    ax.set_ylabel("E(V)", fontsize=12)
-    ax.set_xlabel("Verteilungen", fontsize=12)
+
+    fig, ax = plt.subplots(figsize=(6, 2.9))
+    ax.plot(x_vals, evs, color="black", marker=".", markersize=5, linewidth=1)
+    ax.set_xlabel(xlabel, fontsize=13)
+    ax.set_ylabel(ylabel, fontsize=13)
     ax.set_title(titel, fontsize=12)
     ax.grid(True, linestyle=":", linewidth=0.5)
 
     if len(labels) <= 28:
         ax.set_xticks(x_vals)
-        ax.set_xticklabels(labels, rotation=90, fontsize=8)
+        ax.set_xticklabels(labels, rotation=90, fontsize=9)
     else:
         ax.xaxis.set_major_locator(ticker.MultipleLocator(tick_abstand))
 
@@ -94,12 +109,11 @@ def plot_EVs(werte, titel="E(V)", pdf_name="plot.pdf", tick_abstand=1000, zeige_
     else:
         plt.close()
 
-
 # ------------------------------
 # 7. Duell V gegen alle Gegner W 
 # ------------------------------
 
-def duell_gegen_alle(V, p, evw_func=expected_two):
+def duell_gegen_alle(V, p, evw_func=E_two):
     """
     Berechnet E(V, W) für alle Strategien W mit gleicher Chipsumme wie V.
     Gibt Liste mit Gegner und Erwartungswert zurück.
@@ -124,7 +138,7 @@ def duell_gegen_alle(V, p, evw_func=expected_two):
 # 8. Extremwerte bei E(V,W)
 # ------------------------------
 
-def extremwerte_duell(V, p, evw_func=expected_two):
+def extremwerte_duell(V, p, evw_func=E_two):
     """
     Gibt das Minimum und Maximum von E(V,W) für W ≠ V zurück,
     inklusive Gegnerstrategie, exakter und float-Wert.
