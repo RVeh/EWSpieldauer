@@ -40,8 +40,12 @@ Hinweise zur Nutzung
 - Bei Nutzung von JupytherLab muss sich die Datei *chipspiel.py* im gleichen Verzeichnis wie das benutzte Nootbook befinden.
 
 ---
+
 ## 📦 Beispielrechnungen
-In der Datei *Berechnungen.pdf* sind zwei Beispielberechungen dargestellt.
+
+Datei: Berechnungen.pdf
+
+---
 
 ## 🧮 Voraussetzungen
 
