@@ -43,7 +43,7 @@ Hinweise zur Nutzung
 
 ## 📦 Beispielrechnungen
 
-Datei: Berechnungen.pdf
+- Berechnungen.pdf
 
 ---
 
