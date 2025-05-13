@@ -19,7 +19,6 @@ Alle Berechnungen erfolgen in Python – exakt mit Bruchrechnung (Fraction).
 | `01_EinSpieler_3D.ipynb` | 3D-Darstellung für $m = 3$ |
 | `02_ZweiSpieler_EX_mit_E_V_und_W.ipynb` | Vergleich: $E(V)$, $E(W)$, $E(V, W)$ |
 | `02_Zweispieler_V_gegen_alle.ipynb` | Feste Strategie $V$ gegen alle möglichen $W$ |
-| `Berechnungen.pdf` | Berechungen ohne Computer |
 
 ---
 
@@ -38,6 +37,7 @@ Hinweise zur Nutzung
 - Notebooks lassen sich direkt in Jupyter oder auf Binder öffnen.
 - Bei Binder oder JupyterLab bitte in der Menüzeile **"Run All Cells"** auswählen, um alle Ausgaben zu erzeugen.
 - Das Projekt verwendet die Python-Standardbibliothek und `matplotlib` für Visualisierungen.
+- Bei Nutzung von JupytherLab muss sich die Datei *chipspiel.py* im gleichen Verzeichnis wie das benutzte Nootbook befinden.
 
 
 ## 🧮 Voraussetzungen
